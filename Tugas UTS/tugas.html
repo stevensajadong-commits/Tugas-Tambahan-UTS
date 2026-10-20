@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanKicks ShoesCare</title>
+    <link rel="stylesheet" href="tugas1.css">
+    <script src="tugas2.js"defer></script>
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <span class="badge">CLEAN KICKS SHOES CARE</span>
+            <h1>Selamat Datang di CleanKicks ShoesCare</h1>
+            <p> Pilih layanan yang sesuai dengan kebutuhan kamu</p>
+        </div>
+    </header>
+
+<main class = "container">
+    <section class="toolbar">
+        <input id="searchInput" type="search" placeholder="Cari Layanan">
+        <select id="serviceFilter">
+            <option value="Semua">Semua Layanan</option>
+            <option value="Pembersihan">Pembersihan</option>
+            <option value="Perawatan">Perawatan</option>
+        </select>
+    </section>
+
+<h2 class="section-title"> Layanan yang tersedia</h2>
+<section id="serviceList" class="service-grid"></section>
+<section class="booking" id="booking">
+    <h2> Booking Layanan </h2>
+    <form id="bookingForm">
+        <label for="customerName"> Nama Pelanggan </label>
+        <input id="customerName" type="text" placeholder="Masukkan nama Anda" required>
+
+        <label for="serviceType"> Jenis Layanan </label>    
+        <select id="serviceType" required>
+            <option value="">Pilih layanan</option>
+        </select>
+
+        <label for="shoeQuantity"> Jumlah Sepatu </label>
+        <input id="shoeQuantity" type="number" placeholder="Masukkan jumlah sepatu" min="1" max="10" required>
+
+        <p class="total">Perkiraan total<strong id="totalPrice">Rp 0</strong></p>
+        <button type="submit">Booking Sekarang</button>
+    </form>
+    <p id="bookingResult" class="result" hidden></p>
+</section>
+</main>
+
+<footer>
+    <p> <span id="currentYear"></span>CleanKicks ShoesCare. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
